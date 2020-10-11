@@ -22,7 +22,7 @@ and prepares packages with aditional supplies for them.
 The Singleton pattern I implemented in Factory class itself, because I want it have only one instance and provide a global access point to it. I have a private static 
 attribute for the instance and a private empty constructor to prevent object creation with “new” keyword.
 
-![](D:\University III\SDTM\lab1_SDTM\screen_1.png)
+![](screen_1.png)
 
 In order to check if instance is null I create a new one and use lock to be thread-safe without the necessity of taking out a lock every time.
 
@@ -36,7 +36,7 @@ take PackageBuilder instance as an input parameter and then create and return a 
 
 As Abstract Factory pattern implementation, I created an interface IDeviceFactory which will be the abstract factory for producing devices.
 
-![](Screenshot (63).png)
+![](screen_3.png)
 
 ISmartphone and ITablet are abstract products.
 As concrete factories there are Xiaomi and HP classes which implement the abstract factory to manufacture different types of devices(smartphones and tablets).
@@ -44,4 +44,4 @@ We will get i.e. XiaomiMiSmartphone, HpEliteSmartphone as concrete products.
 To manufacture devices by following this abstract factory I created a class Client with GetManufacturedProduct methods.
 # Screenshot:
 
-![](Screenshot (65).png)
+![](screen_4.png)
