@@ -2,6 +2,10 @@
 [Tt]humbs.db
 *.DS_Store
 
+/design_patterns.csproj
+/design_patterns.sln
+/lab1_SDTM.sln
+
 #Visual Studio files
 *.[Oo]bj
 *.user
