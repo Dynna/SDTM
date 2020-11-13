@@ -6,7 +6,7 @@ namespace lab1_SDTM
 {
     class PackageDirector
     {
-        public Package MakePackage(PackageBuilder packageBuilder)
+        internal Package MakePackage(PackageBuilder packageBuilder)
         {
             packageBuilder.CreatePackage();
 

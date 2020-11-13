@@ -27,7 +27,7 @@
     {
         public string Name()
         {
-            return "HP Slate 6 VoiceTab II ";
+            return "HP Slate 6 VoiceTab II";
         }
     }
 
