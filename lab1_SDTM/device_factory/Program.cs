@@ -4,7 +4,6 @@ using design_patterns.device_factory;
 using design_patterns.device_package;
 using design_patterns.order;
 using System;
-using System.Security.Cryptography.X509Certificates;
 
 namespace lab1_SDTM
 {
@@ -108,16 +107,7 @@ namespace lab1_SDTM
             order.Add(dev1);
             order.Add(dev2);
             order.Add(dev3);
-
             order.Display(1);
-/*
-            Console.WriteLine("\nDevice feedback given by customers:");
-            OpenToFeedback rateDevice = new OpenToFeedback(new Smartphone(model, "4.5/5", 10));
-            rateDevice.RateItem("Danette Windsor");
-            rateDevice.RateItem("Elise Abdulla");
-            rateDevice.RateItem("Joep Adam");*/
-
-            
 
             Console.ReadLine();
         }
