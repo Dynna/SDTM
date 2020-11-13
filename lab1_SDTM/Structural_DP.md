@@ -49,7 +49,7 @@ Next are the concrete components Tablet and Smartphone, which define an object t
 
 Also, I have DeviceDecorator.cs which maintains a reference to a DeviceItem object and defines an interface that conforms to DeviceItem's interface.
 
-![](images/screen_lab2_7.png)
+![](images/screen_lab2_77.png)
 
 Last one is OpenToFeedback.cs which adds responsibilities to the component. Namely it allows each customer to rate the device and displays its name.
 
