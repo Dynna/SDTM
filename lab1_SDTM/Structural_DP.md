@@ -17,7 +17,10 @@ Structural design patterns are patterns that describe how objects and classes ca
 # Implementation:
 
 In this project I have implemented 3 Structural Design Patterns, which are Composite, Adapter and Decorator. As a domain I used Factory which manufactures devices 
-and prepares packages with aditional supplies for them. Using these 3 structural design pattern I've implement some additional functionalities like: adapting device package elements to a representation well-defined for users, indicating device specifications and color; composing orders structure for daily reports including all sold devices and their details; making devices open to feedback given by customers;
+and prepares packages with aditional supplies for them. Using these 3 structural design pattern I've implement some additional functionalities like: 
+* adapting device package elements to a representation well-defined for users, indicating device specifications and color; 
+* composing orders structure for daily reports including all sold devices and their details; 
+* making devices open to feedback given by customers;
 For the Composite design pattern I have 4 participant classes: AddingElement.cs (Component) which declares the interface for objects in composition, implements default behavior for the interface common to all classes and declares an interface for accessing and managing its child components. Namely it provides adding device to an order functionality.
 
 ![](images/screen_lab2_1.png)
