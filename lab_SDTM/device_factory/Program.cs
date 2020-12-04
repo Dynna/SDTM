@@ -124,6 +124,27 @@ namespace lab1_SDTM
             device.Price = 440;
             device.Price = 390;
 
+            Console.WriteLine("\n===============================================================================");
+            Console.WriteLine(interestedClient + ", thanks for choosing our site :) \n");
+
+            SortedDevices sortedDevices = new SortedDevices();
+
+            sortedDevices.Add("Samsung Galaxy S20 FE");
+            sortedDevices.Add("Apple iPhone 12");
+            sortedDevices.Add("Xiaomi Mi 10T Lite");
+
+            sortedDevices.SetSortStrategy(new SortBasedOnSearch());
+            sortedDevices.Sort();
+
+            SortedDevices sortedDevicesByReview = new SortedDevices();
+
+            sortedDevicesByReview.Add("iPhone 12 Pro Max");
+            sortedDevicesByReview.Add("Samsung Galaxy Note 20 Ultra");
+            sortedDevicesByReview.Add("OnePlus 8 Pro");
+
+            sortedDevicesByReview.SetSortStrategy(new SortBasedOnReviews());
+            sortedDevicesByReview.Sort();
+
             Console.ReadLine();
         }
     }

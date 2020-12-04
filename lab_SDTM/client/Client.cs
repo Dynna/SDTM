@@ -41,7 +41,7 @@ namespace lab1_SDTM
 
         public void Update(Stock stock)
         {
-            Console.WriteLine("Notified {0} about new {1} with hot price {2:C}", _name, stock.Model, stock.Price);
+            Console.WriteLine("Notification for {0}, there is a new {1} with hot price {2:C}", _name, stock.Model, stock.Price);
         }
 
         public Stock Stock
