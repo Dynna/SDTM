@@ -17,5 +17,7 @@ namespace design_patterns.device_package
         {
              return $"Specifications: {this._adaptee.GetSpecification()}\nColor: {this._adaptee.GetColor()}";
         }
+
+        public void Update(Stock stock) { }
     }
 }

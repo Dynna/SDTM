@@ -33,8 +33,8 @@ namespace lab1_SDTM
             Console.WriteLine(hpClient.GetManufacturedSmartphoneName());
             Console.WriteLine(hpClient.GetManufacturedTabletName());
 
-            Console.WriteLine("=========================================================================");
-
+            Console.WriteLine("===============================================================================");
+            
             Console.WriteLine("Please type in a device model you want to purchase from the list above:");
             model = Console.ReadLine();
 
@@ -85,7 +85,7 @@ namespace lab1_SDTM
                 Console.WriteLine("Sorry, we do not manufacture such device model!");
             }
 
-            Console.WriteLine("\n=========================================================================");
+            Console.WriteLine("\n===============================================================================");
             CompositeOrder order = new CompositeOrder("Orders for " + DateTime.Now.ToString("M/d/yyyy"));
 
             order.Add(new PrimitiveElement(model));
@@ -108,6 +108,21 @@ namespace lab1_SDTM
             order.Add(dev2);
             order.Add(dev3);
             order.Display(1);
+
+            Console.WriteLine("\n===============================================================================");
+
+            Console.WriteLine("Register your name if you want to be notified about new devices and best prices:");
+            string interestedClient = Console.ReadLine();
+
+            Console.WriteLine("\n===============================================================================");
+            Console.WriteLine("");
+            Device device = new Device("Huawei Mate 20 Pro", 470);
+            device.Attach(new Client(interestedClient));
+            device.Attach(new Client("Samantha Novak"));
+
+            device.Price = 470;
+            device.Price = 440;
+            device.Price = 390;
 
             Console.ReadLine();
         }
