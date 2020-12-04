@@ -1,5 +1,12 @@
 # Topic: Behavioral Design Patterns
 ###### Author: Dina Ciorba
+# Table of contests:
+* [Objectives](#objectives)
+* [Theory](#theory)
+* [Implementation](#implementation)
+* [Technologies](#technologies)
+* [Conclusion](#conclusion)
+* [Screenshot](#screenshot)
 # Objectives:
 ##### 1. Study and understand the Behavioral Design Patterns;
 ##### 2. As a continuation of the previous laboratory work, thinking about what communication between software entities might be involed in my system;
@@ -63,6 +70,16 @@ __SortBasedOnSearch.cs__ & __SortBasedOnReviews.cs__ classes implement the algor
 __SortedDevices.cs__ is configured with a Concrete Strategy object, it maintains a reference to a Strategy object and may define an interface that lets Strategy access its data.
 
 ![](images/screen_lab3_10.png)
+
+# Technologies:
+
+
+Project is created with 
+* __C#/.NET Core 3.1__
+
+
+# Conclusion:
+
 
 In final this application provides a list of devices that Factory manufactures and allows user to input the device model they want to purchase. After it user is able to see the rating of this device given by other customers. Also, a list of sold devices is provided with their specific details at the time of current day. Due to __Observer__ design pattern, client is able to register their name if they want to be notified about new devices and hot prices. Only interested users are notified. With __Strategy__, users are able to see a sorted list of devices based on their search list and based on highest reviews that devices have.
 
