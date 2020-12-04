@@ -19,7 +19,7 @@ Behavioral design patterns are concerned with algorithms and the assignment of r
 # Implementation:
 
 In this project I have implemented 2 Behavioral Design Patterns which are Observer and Strategy. As a domain I used Factory which manufactures devices 
-and prepares packages with additional supplies for them. Using this behavioral design pattern I've implement some additional functionalities like: 
+and prepares packages with additional supplies for them. Using these behavioral design patterns, I've implemented some additional functionalities like: 
 * notifying specific clients which are interested in new devices and best prices; [Observer]
 * providing a list of sorted devices based on two algorithms: sort by user's search list and by reviews; [Strategy]
 
@@ -45,7 +45,10 @@ __Client.cs__ class from _client_ folder maintains a reference to a Device objec
 
 ![](images/screen_lab3_5.png)
 
-With Strategy design pattern I define a family of algorithms, encapsulated each one, and made them interchangeable. Strategy lets the algorithm vary independently from clients that use it. The classes and objects participating in this pattern are: SortStrategy.cs [Strategy], SortBasedOnSearch.cs and SortBasedOnReviews.cs [ConcreteStrategy], SortedDevices.cs [Context]. The UML diagram looks like following:
+
+With Strategy design pattern I defined a family of algorithms, encapsulated each one, and made them interchangeable. Strategy lets the algorithm vary independently from clients that use it. The classes and objects participating in this pattern are: SortStrategy.cs [Strategy], SortBasedOnSearch.cs and SortBasedOnReviews.cs [ConcreteStrategy], SortedDevices.cs [Context]. 
+
+The UML diagram looks like following:
 
 ![](images/screen_lab3_7.png)
 
@@ -53,7 +56,7 @@ __SortStrategy.cs__ from _device_ folder declares an interface common to all sup
 
 ![](images/screen_lab3_8.png)
 
-__SortBasedOnSearch.cs__ & __SortBasedOnReview__ classes implements the algorithm using the Strategy interface.
+__SortBasedOnSearch.cs__ & __SortBasedOnReviews.cs__ classes implement the algorithm using the Strategy interface.
 
 ![](images/screen_lab3_9.png)
 
@@ -61,7 +64,7 @@ __SortedDevices.cs__ is configured with a Concrete Strategy object, it maintains
 
 ![](images/screen_lab3_10.png)
 
-In final this application provides a list of devices that Factory manufactures and allows user to input the device model they want to purchase. After it user is able to see the rating of this device given by other customers. Also, a list of sold device is provided with their specific details at the time of current day. Due to __Observer__ design pattern client is able to register their name if they want to be notified about new devices and hot prices. Only interested users are notified. With __Strategy__, users are able to see a sorted list of devices based on their search list and based on highest reviews that devices have.
+In final this application provides a list of devices that Factory manufactures and allows user to input the device model they want to purchase. After it user is able to see the rating of this device given by other customers. Also, a list of sold devices is provided with their specific details at the time of current day. Due to __Observer__ design pattern, client is able to register their name if they want to be notified about new devices and hot prices. Only interested users are notified. With __Strategy__, users are able to see a sorted list of devices based on their search list and based on highest reviews that devices have.
 
 
 # Screenshot:
