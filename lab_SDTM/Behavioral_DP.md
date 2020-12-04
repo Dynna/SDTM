@@ -18,27 +18,29 @@ Behavioral design patterns are concerned with algorithms and the assignment of r
 - Visitor
 # Implementation:
 
-In this project I have implemented 1 Behavioral Design Patterns, which Observer. As a domain I used Factory which manufactures devices 
-and prepares packages with aditional supplies for them. Using this behavioral design pattern I've implement some additional functionalities like: 
+In this project I have implemented 1 Behavioral Design Pattern which is Observer. As a domain I used Factory which manufactures devices 
+and prepares packages with additional supplies for them. Using this behavioral design pattern I've implement some additional functionalities like: 
 * notifying specific clients which are interested in new devices and best prices;
 
-With Observer design pattern I defined a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. For its implementation I have 4 participant components: Stock [Subject], Device [ConcreteSubject], IClient [Observer], Client [ConcreteObserver]. The UML diagram looks like following:
+With Observer design pattern I defined a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. For its implementation I have 4 participant components: Stock.cs [Subject], Device.cs [ConcreteSubject], IClient.cs [Observer] and Client.cs [ConcreteObserver].
+
+The UML diagram looks like following:
 
 ![](images/screen_lab3_1.png)
 
-The Stock.cs class from device_factory knows its clients and provides an interface for attaching and dettaching IClient objects.
+The __Stock.cs__ class from _device_factory_ folder knows its clients and provides an interface for attaching and dettaching IClient objects.
 
 ![](images/screen_lab3_2.png)
 
-Device.cs class from device folder stores state of interest to Client and sends a notification to its clients when it state changes.
+__Device.cs__ class from _device_ folder stores state of interest to Client and sends a notification to its clients when its state changes.
 
 ![](images/screen_lab3_3.png)
 
-IClient.cs interface from client folder defines an updating interface for objects that should be notified of changes in a stock.
+__IClient.cs__ interface from _client_ folder defines an updating interface for objects that should be notified of changes from the Stock.
 
 ![](images/screen_lab3_4.png)
 
-Client.cs class from client folder maintains a reference to a Device object, it stores state that should stay consistent with the Stock's state and implements the IClient updating interface to keep its state consistent with the Stock state.
+__Client.cs__ class from _client_ folder maintains a reference to a Device object, it stores state that should stay consistent with the Stock's state and implements the IClient updating interface to keep its state consistent with the Stock state.
 
 ![](images/screen_lab3_5.png)
 
